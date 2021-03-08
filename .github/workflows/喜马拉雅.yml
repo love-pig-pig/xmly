@@ -23,6 +23,7 @@ jobs:
       - name: 'run 喜马拉雅极速版' 
         run: python3 XMLY.py 
         env:
+            AUTO_TAKE_OUT: ${{ secrets.AUTO_TAKE_OUT }}
             XMLY_SPEED_COOKIE: ${{ secrets.XMLY_SPEED_COOKIE }}  #必须
             # XMLY_ACCUMULATE_TIME: ${{ secrets.XMLY_ACCUMULATE_TIME }} #非私密信息，去掉
             BARK: ${{ secrets.BARK }}     # bark服务
