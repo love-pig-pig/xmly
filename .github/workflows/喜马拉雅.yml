@@ -1,5 +1,5 @@
 name: 喜马拉雅极速版
-
+workflow_dispatch:
 on:
   schedule:
     - cron: '*/30 * * * *'
